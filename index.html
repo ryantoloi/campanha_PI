@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>campanha</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+
+        <!-- barra de naveção, precisa colocar os links para outras abas -->
+      <nav class="navbar navbar-expand-lg " >
+
+        <a class="navbar-brand" href="" style="color: rgb(135, 133, 137);">
+          <img
+            src="img/EH_logo_inv.png"
+            alt="Bootstrap"
+            width="90"
+            height="90"
+          />
+          Event Horizon
+        </a>
+
+        <div class="container-fluid" >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" style="color: white;">Pagina inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">campanhas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">outra aba (escolher dps)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <!--campos para ser preenchidos pelo usuario-->
+      <div class="d-flex">
+        <div class="container text-center" id="campos">
+            <h1 class="titulo">Campanha</h1>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputDisabled"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInputDisabled" >Nome da campanha</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea
+              class="form-control"
+              placeholder="Digite o nome completo"
+              id="floatingTextareaDisabled"
+            ></textarea>
+            <label for="floatingTextareaDisabled">descrição</label>
+          </div>
+
+             <!-- Escolher template do sistema, no momento não tem funcionalidade -->
+          <h2>Escolher template do sistema:</h2>
+          <div class="templates_sistema">
+            <a href="#" class="btn btn-primary" aria-current="page"
+             id="botoes" > ordem ></a
+            >
+            <a href="#" class="btn btn-primary" id="botoes">D & D ></a>
+            <a href="#" class="btn btn-primary" id="botoes">C o C ></a>
+          </div>
+
+            <!-- fazer upload do proprio template e poder criar o seu proprio, no momento não tem funcionalidade -->
+          <h2>Seus templates:</h2>
+          <div class="criar">
+            <button type="button" class="btn btn-primary" id="new">Criar template</button>
+
+            <input
+              type="file"
+              id="arquivoInput"
+              name="documento"
+              class="input-escondido"
+            />
+
+            <label
+              for="arquivoInput"
+              id="label-customizada"
+              class="botao-customizado"
+            >
+              Escolher Arquivo
+            </label>
+
+            <span id="nomeArquivo">Nenhum arquivo selecionado</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/style.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
